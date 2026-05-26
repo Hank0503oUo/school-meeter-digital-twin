@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "building-energy-knowledge": {
+      "command": "python",
+      "args": [
+        "mcp_server.py"
+      ],
+      "cwd": "D:\\idf優化\\demo"
+    }
+  }
+}

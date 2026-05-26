@@ -1,0 +1,16 @@
+{
+  "profiles": [
+    {
+      "id": "claude_stdio",
+      "label": "Claude MCP（範例：請改成你的腳本路徑）",
+      "cmd": "cmd /c D:\\path\\to\\claude_mcp_review.cmd",
+      "cwd": ""
+    },
+    {
+      "id": "cursor_bridge",
+      "label": "Cursor / 其他橋接（範例）",
+      "cmd": "cmd /c D:\\path\\to\\cursor_mcp_review.cmd",
+      "cwd": ""
+    }
+  ]
+}

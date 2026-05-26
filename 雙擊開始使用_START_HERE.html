@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>NTU Energy Demo — 啟動入口</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: "Segoe UI", "Noto Sans TC", sans-serif;
+            background: linear-gradient(135deg, #0d1e30, #1a3148);
+            color: #f0f5fb;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 28px;
+        }
+        .card {
+            width: min(820px, 100%);
+            background: rgba(5, 14, 24, 0.88);
+            border: 1px solid rgba(255,255,255,0.09);
+            border-radius: 22px;
+            padding: 36px 38px;
+            box-shadow: 0 24px 70px rgba(0,0,0,0.45);
+        }
+        h1 { font-size: 1.9rem; margin-bottom: 6px; }
+        .subtitle { color: #7aaec8; font-size: 0.93rem; margin-bottom: 30px; }
+
+        /* ── 主入口卡片 ── */
+        .main-entry {
+            border-radius: 16px;
+            padding: 24px 26px;
+            border: 1px solid rgba(80,160,255,0.35);
+            background: rgba(30,80,180,0.18);
+            margin-bottom: 20px;
+        }
+        .main-entry .tag {
+            display: inline-block;
+            font-size: 0.68rem;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            background: rgba(80,160,255,0.22);
+            color: #7ec0ff;
+        }
+        .main-entry h2 { font-size: 1.2rem; margin-bottom: 8px; }
+        .main-entry p  { font-size: 0.9rem; color: #9bb8d0; line-height: 1.65; margin-bottom: 16px; }
+
+        .cmd-big {
+            background: rgba(255,255,255,0.07);
+            border: 1px solid rgba(80,160,255,0.25);
+            border-radius: 12px;
+            padding: 14px 18px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .cmd-big .icon { font-size: 1.8rem; }
+        .cmd-big .info .file  { color: #e8f4ff; font-weight: 700; font-size: 1.05rem; }
+        .cmd-big .info .url   { color: #60cfb0; font-size: 0.82rem; margin-top: 3px; }
+
+        /* ── 分頁說明 ── */
+        .tabs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 10px;
+            margin-bottom: 22px;
+        }
+        .tab-chip {
+            border-radius: 10px;
+            padding: 12px 14px;
+            border: 1px solid rgba(255,255,255,0.07);
+            background: rgba(255,255,255,0.04);
+            font-size: 0.84rem;
+        }
+        .tab-chip .t-name { font-weight: 700; color: #c8dfff; margin-bottom: 3px; }
+        .tab-chip .t-desc { color: #7a9ab8; font-size: 0.78rem; line-height: 1.4; }
+
+        /* ── 其他 cmd ── */
+        .section-title {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #5a7a98;
+            margin: 20px 0 10px;
+        }
+        .tips {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 12px;
+            padding: 14px 16px;
+        }
+        .tips table { width: 100%; border-collapse: collapse; }
+        .tips td { padding: 5px 8px; font-size: 0.84rem; vertical-align: top; }
+        .tips td:first-child { color: #5a7a98; white-space: nowrap; padding-right: 16px; }
+        code {
+            background: rgba(255,255,255,0.09);
+            padding: 1px 7px;
+            border-radius: 6px;
+            font-size: 0.87em;
+            color: #c0daf5;
+        }
+        .warn {
+            margin-top: 18px;
+            padding: 12px 16px;
+            border-radius: 10px;
+            background: rgba(255,200,50,0.07);
+            border: 1px solid rgba(255,200,50,0.18);
+            font-size: 0.83rem;
+            color: #f0d890;
+            line-height: 1.55;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h1>校園能源數位分身</h1>
+    <p class="subtitle">NTU / NCU Campus Energy Digital Twin &nbsp;·&nbsp; 統一入口（地圖 + Workbench 全整合）</p>
+
+    <!-- 主入口 -->
+    <div class="main-entry">
+        <div class="tag">唯一推薦入口</div>
+        <h2>統一 Dashboard — 地圖 + Workbench 全在裡面</h2>
+        <p>點開後有 5 個分頁：<strong>Map（校園地圖）</strong>、Analysis、AI Console、<strong>Workbench（MCP 知識工作台）</strong>、Tables。<br>不需要再另外啟動 Workbench，全部整合在同一個 app。</p>
+        <div class="cmd-big">
+            <div class="icon">&#x25B6;&#xFE0F;</div>
+            <div class="info">
+                <div class="file">open_demo.cmd &nbsp;（雙擊）</div>
+                <div class="url">→ http://127.0.0.1:5006/app</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 分頁說明 -->
+    <div class="section-title">Dashboard 內的 5 個分頁</div>
+    <div class="tabs-grid">
+        <div class="tab-chip">
+            <div class="t-name">Map</div>
+            <div class="t-desc">校園能源地圖、建物點選、時序圖</div>
+        </div>
+        <div class="tab-chip">
+            <div class="t-name">Analysis</div>
+            <div class="t-desc">EUI 排名、廢熱分析、R² 散點</div>
+        </div>
+        <div class="tab-chip">
+            <div class="t-name">AI Console</div>
+            <div class="t-desc">Cloud / Local MCP 助理對話</div>
+        </div>
+        <div class="tab-chip" style="border-color:rgba(40,200,140,0.3); background:rgba(20,110,80,0.12);">
+            <div class="t-name" style="color:#5effc0;">Workbench</div>
+            <div class="t-desc">Nekaise Agent、知識庫、ONTOLOGY、MEMORY</div>
+        </div>
+        <div class="tab-chip">
+            <div class="t-name">Tables</div>
+            <div class="t-desc">統計總表、反事實對照</div>
+        </div>
+    </div>
+
+    <!-- 其他 cmd -->
+    <div class="section-title">其他啟動檔</div>
+    <div class="tips">
+        <table>
+            <tr>
+                <td><code>run_demo.cmd</code></td>
+                <td>命令列版，視窗保持開著（附 autoreload）port 5006</td>
+            </tr>
+            <tr>
+                <td><code>run_mcp_server.cmd</code></td>
+                <td>單獨啟動 MCP 後端 <code>mcp_server.py</code></td>
+            </tr>
+            <tr>
+                <td><code>run_workbench.cmd</code></td>
+                <td>單獨啟動純 Workbench（沒有地圖）port 5007，僅需要獨立測試時用</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="warn">
+        ⚠️ 瀏覽器無法直接執行 .cmd 檔。請回到<strong>檔案總管</strong>，在專案資料夾裡<strong>雙擊 open_demo.cmd</strong> 啟動。
+    </div>
+</div>
+</body>
+</html>

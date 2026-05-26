@@ -1,0 +1,49 @@
+{
+  "label": "ncu_center",
+  "query_latitude": 24.9684,
+  "query_longitude": 121.1946,
+  "building_resource_name": "buildings/ChIJzZhY5sEjaDQRBdvAAomZbMU",
+  "center_latitude": 24.9682723,
+  "center_longitude": 121.1944123,
+  "imagery_quality": "BASE",
+  "postal_code": null,
+  "region_code": "TW",
+  "administrative_area": null,
+  "request_quality": "BASE",
+  "used_expanded_coverage": true,
+  "attempts": [
+    {
+      "required_quality": "HIGH",
+      "expanded_coverage": false,
+      "status": "error",
+      "status_code": 404,
+      "message": "Requested entity was not found."
+    },
+    {
+      "required_quality": "BASE",
+      "expanded_coverage": true,
+      "status": "ok"
+    }
+  ],
+  "building_area_m2": 908.0073,
+  "building_ground_area_m2": 849.27,
+  "whole_roof_area_m2": 766.74646,
+  "whole_roof_ground_area_m2": 756.08,
+  "roof_segment_count": 13,
+  "largest_roof_segment_area_m2": 141.77863,
+  "largest_roof_segment_pitch_degrees": 2.2429593,
+  "largest_roof_segment_azimuth_degrees": 8.101241,
+  "mean_roof_pitch_degrees_weighted": 6.652336888239472,
+  "min_roof_plane_height_m": 136.04097,
+  "max_roof_plane_height_m": 165.24109,
+  "roof_plane_height_span_m": 29.200120000000027,
+  "max_array_area_m2": 484.99805,
+  "max_array_panels_count": 247,
+  "solar_panel_count": 247,
+  "solar_panel_config_count": 166,
+  "panel_height_m": 1.879,
+  "max_sunshine_hours_per_year": 1408.1002,
+  "carbon_offset_factor_kg_per_mwh": null,
+  "roof_to_ground_ratio": 0.9028,
+  "whole_roof_to_ground_ratio": 1.0141
+}
