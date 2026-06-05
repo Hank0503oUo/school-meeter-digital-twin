@@ -8,6 +8,13 @@ This repository presents the architecture of a campus energy digital twin system
 
 The public repository keeps the engineering structure, module boundaries, product design, and integration approach, while excluding raw campus meter data, private model assets, derived indexes, caches, and other local sensitive artifacts.
 
+## Current Status
+
+- Status: In Progress
+- Progress stage: mid-to-late prototype across dashboard, inference, knowledge, and MCP layers
+- Current focus: modularization, tool integration, and productization boundaries
+- Public repository scope: system architecture and engineering design only
+
 ## 專案定位
 
 這是一個校園能源數位分身系統，不只是 dashboard，而是把：
