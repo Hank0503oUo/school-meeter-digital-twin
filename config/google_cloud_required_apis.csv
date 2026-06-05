@@ -1,4 +1,0 @@
-API名稱,API ID,用途,必要性,免費額度(每月),預估呼叫次數,備註
-Geocoding API,geocoding-backend,用 place_id 取得建物足跡多邊形 (display_polygon),必要,每月 10000 次免費 (Essentials SKU),約 400-800 次 (兩校合計),帶 extra_computations=BUILDING_AND_ENTRANCES 參數
-Places API (New),places-backend,在校園 bounding box 內搜尋建物取得 place_id,必要,每月免費額度依 SKU,約 200-400 次 (grid scan 兩校),使用 Nearby Search 端點
-Maps JavaScript API,maps-backend,（如需在瀏覽器預覽 Google 底圖）,非必要,每月 28500 次免費,0 (目前用 pydeck 不需要),目前 dashboard 用 pydeck/MapLibre 不需開啟

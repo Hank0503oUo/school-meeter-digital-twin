@@ -1,3 +1,0 @@
-[launcher config] preferred_port=5006, fallback_ports=5008,5009,5010,5011, wait_seconds=90, start_retries=1
-Reusing the running campus demo on port 5006.
-Opening http://127.0.0.1:5006/app
