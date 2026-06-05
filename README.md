@@ -2,6 +2,12 @@
 
 此 repository 目前聚焦於系統架構、模組分層、產品思路與可公開的工程設計，不包含校園原始電表資料、私有模型權重、快取、知識庫衍生索引、工作紀錄或其他本地敏感產物。
 
+## English Overview
+
+This repository presents the architecture of a campus energy digital twin system. The project combines building and meter data, inference engines, counterfactual analysis, geospatial visualization, a knowledge workbench, and an MCP-based tool layer into a single interactive energy management application.
+
+The public repository keeps the engineering structure, module boundaries, product design, and integration approach, while excluding raw campus meter data, private model assets, derived indexes, caches, and other local sensitive artifacts.
+
 ## 專案定位
 
 這是一個校園能源數位分身系統，不只是 dashboard，而是把：
